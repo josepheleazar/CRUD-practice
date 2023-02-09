@@ -1,0 +1,133 @@
+@import '../../main.scss';
+
+// General Style + Smartphone Media
+.users__container {
+  display: flex;
+  background-color: $background-color2;
+  flex-direction: column;
+  height: 85vh;
+  overflow: auto !important;
+  padding: 1rem;
+}
+
+.users__table {
+  > div {
+    height: 100vh;
+    > div {
+      height: 100vh;
+      > div {
+        height: 55vh;
+        > div {
+          min-height: 100vh;
+        }
+      }
+    }
+  }
+}
+
+.users__container--center {
+  align-items: center;
+  display: flex;
+  background-color: $background-color2;
+  height: 85vh;
+  justify-content: center;
+  overflow: auto !important;
+  padding: 1rem;
+  width: 100%;
+}
+
+.users__container--flex-right{
+  display: flex;
+  justify-content: right;
+  height: 50px;
+}
+
+.users__primary-button {
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+  color: $background-color2;
+  font-size: small;
+}
+
+.users__warning-button {
+  background-color: $warning-color;
+  border: 1px solid $warning-color;
+  border-radius: 5px;
+  color: $background-color2;
+  font-size: small;
+}
+
+// Tablet Media
+@media (min-width: 768px) {
+  .users__container {
+    height: 87.5vh;
+    overflow: auto !important;
+    padding: 1rem 3.5rem;
+  }
+
+  .users__container--center {
+    height: 87.5vh;
+    overflow: auto !important;
+    padding: 1rem 3.5rem;
+  }
+
+  .users__table {
+    > div {
+      height: 100vh;
+      > div {
+        height: 100vh;
+        > div {
+          height: 75vh;
+          > div {
+            min-height: 100vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop Media
+@media (min-width: 1024px) {
+  .users__container {
+    gap: 10px;
+    height: 80vh;
+    overflow: auto !important;
+    padding: 1rem 3.5rem;
+  }
+
+  .users__container--center {
+    gap: 10px;
+    height: 80vh;
+    overflow: auto !important;
+    padding: 1rem 3.5rem;
+  }
+
+  .users__table {
+    > div {
+      > div {
+        > div {
+          height: 65vh;
+        }
+      }
+    }
+  }
+
+  .users__form {
+    width: inherit;
+  }
+
+  .users__form > div {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .users__form > div > input {
+    width: 80%;
+  }
+}

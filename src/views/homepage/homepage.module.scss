@@ -1,0 +1,46 @@
+@import '../../main.scss';
+
+// General Style + Smartphone Media
+.homepage__container {
+  display: flex;
+  background-color: $background-color2;
+  flex-direction: column;
+  height: 85vh;
+  padding: 0;
+}
+
+.homepage__main__container {
+  overflow: overlay !important;
+  height: inherit;
+  padding: 1.5rem;
+}
+
+.homepage__container > h1 {
+  color: $primary-color;
+}
+
+.homepage__container > p {
+  color: $primary-color;
+}
+
+// Tablet Media
+@media (min-width: 768px) {
+  .homepage__container {
+    height: 87.5vh;
+  }
+
+  .homepage__main__container {
+    padding: 2rem 3.5rem;
+  }
+}
+
+// Desktop Media
+@media (min-width: 1024px) {
+  .homepage__container {
+    height: 80vh;
+  }
+
+  .homepage__main__container {
+    padding: 2rem 3.5rem;
+  }
+}

@@ -1,0 +1,89 @@
+@import '../../main.scss';
+
+// Header Styles
+.header__navbar__container {
+  background-color: $primary-color;
+  border-bottom: 1px solid $primary-color;
+  height: 10vh;
+  overflow: hidden;
+  padding: 0.75rem 1rem;
+}
+
+.header__navbar__brand > h1 {
+  color: $background-color2;
+}
+
+.header__navbar__tab-group__container {
+  background-color: $primary-color;
+}
+
+.header__navbar__tab-group__tab-item {
+  color: $background-color2;
+}
+
+.header__navbar__tab-group__tab-item:hover {
+  color: $background-color2;
+}
+
+.header__navbar__tab-group__tab-item--active {
+  color: $secondary-color;
+}
+
+.header__navbar__tab-group__tab-item--active:hover {
+  color: $secondary-color;
+}
+
+// Tablet Media
+@media (min-width: 768px) {
+  .header__navbar__container {
+    height: 7.5vh;
+    padding: 0.75rem 1rem;
+  }
+}
+
+// Desktop Media
+@media (min-width: 1024px) {
+  .header__navbar__container {
+    height: 10vh;
+    padding: 0.75rem 3rem;
+  }
+}
+
+// Footer Styles
+.footer__container {
+  align-items: center;
+  display: flex;
+  background-color: $primary-color;
+  border-top: 1px solid $primary-color;
+  height: 5vh;
+  overflow: hidden;
+  padding: 0.75rem 1rem;
+  justify-content: center;
+}
+
+.footer__container > h1 {
+  color: $background-color2;
+  font-size: 12px;
+}
+
+// Tablet Media
+@media (min-width: 768px) {
+  .footer__container {
+    height: 5vh;
+  }
+
+  .footer__container > h1 {
+    font-size: 16px;
+  }
+}
+
+// Desktop Media
+@media (min-width: 1024px) {
+  .footer__container {
+    height: 10vh;
+  }
+
+  .footer__container > h1 {
+    font-size: 24px;
+  }
+}
